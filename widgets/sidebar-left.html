@@ -1,0 +1,96 @@
+<aside>
+    <div class="logo-box">
+        <img src="../img/logo-play.png" alt="Logo">
+        <span class="bati">Bati Music</span>
+    </div>
+
+    <!-- <div class="sb-container"> -->
+
+    <h4 class="cat-title">Categories</h4>
+
+    <div class="category mt-1">
+        <ul>
+            <li>
+                <a href="../pages/homepage.html" class="sidebar-link active"><i class="fas fa-album-collection"></i>Popular Albums</a>
+            </li>
+            <li>
+                <a class="sidebar-link" href=" ../pages/genre.html "><i class="fas fa-compact-disc "></i>Genre</a>
+            </li>
+            <li>
+                <a class="sidebar-link" href="../pages/popular-track.html"><i class="far fa-music-alt"></i></i>Popular Tracks</a>
+            </li>
+            <li>
+                <a class="sidebar-link" href="../pages/new-release.html"><i class="far fa-newspaper"></i>New Release</a>
+            </li>
+        </ul>
+    </div>
+
+    <hr class="gray-line mt-1 mb-1 ">
+
+    <h4 class="cat-title ">Your Music</h4>
+    <div class="category mt-1 ">
+        <ul class=" ">
+            <li>
+                <a class="sidebar-link" href="../pages/your-songs.html "><i class="far fa-music "></i>Songs </a>
+            </li>
+            <li>
+                <a class="sidebar-link" href="../pages/your-albums.html "><i class="far fa-album "></i></i>Albums</a>
+            </li>
+            <li>
+                <a class="sidebar-link" href="../pages/by-artist.html "><i class="fas fa-user-music "></i>Artist</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <hr class="gray-line mt-1 mb-1 ">
+    <h4 class="cat-title ">Playlist</h4>
+
+    <div class="category mt-1 ">
+        <ul>
+            <li>
+                <a href="# "> <i class="far fa-play "></i>my pl 1 </a>
+            </li>
+
+        </ul>
+    </div>
+</aside>
+
+<script>
+    const metas = document.getElementsByTagName('meta');
+
+    const page = metas[1].getAttribute("content");
+
+    const links = document.querySelectorAll(".sidebar-link");
+    links.forEach(link => {
+        link.classList.remove('active');
+    });
+
+
+    switch (page) {
+        case "home":
+            links[0].classList.add("active");
+            break;
+        case "genre":
+            links[1].classList.add("active");
+            break;
+        case "tracks":
+            links[2].classList.add("active");
+            break;
+        case "release":
+            links[3].classList.add("active");
+            break;
+        case "songs":
+            links[4].classList.add("active");
+            break;
+        case "album":
+            links[5].classList.add("active");
+            break;
+        case "artist":
+            links[6].classList.add("active");
+            break;
+        default:
+            links[0].classList.add("active");
+            break;
+    }
+</script>

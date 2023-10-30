@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+
+    <link rel="shortcut icon" href="img/logo-black.png" image/x-icon ">
+</head>
+
+<body>
+    <div class="homepage ">
+        <header>
+            <div class="logo ">
+                <img src="img/logo-white.png " alt="Logo ">
+            </div>
+
+            <!-- <div class="max-width "> -->
+                <div class="brand "> Bati </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="# " id="register " class="btn btn-white ">Register</a>
+                        </li>
+                        <li>
+                            <a onclick="return false " href="# " class="btn btn-green ">
+                                <div onclick="show() ">Login</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            <!-- </div> -->
+        </header>
+        <main>
+            <div class="container ">
+                <h1 class="h-pr mb-3 ">
+                    Connect to Bati Album Store
+                </h1>
+                <p class="desc mb-2 ">Lolorem1 Lorem ipsum dolor sit amet. rem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, expedita?</p>
+
+                <form action="# " class="mb-2 ">
+                    <div class="group ">
+                        <input name="query " type="search " placeholder="Search for ,artist, album, tracks... ">
+                        <label for="query "><i class="fa fa-search " aria-hidden="true "></i></label>
+                    </div>
+                </form>
+
+                <a href="# " class="btn btn-green ">Sign up now</a>
+                <a href="pages/homepage.html " class="btn btn-white ">Explore</a>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+<div id="order-now ">
+    <div class="box ">
+        <img src="img/film 1.jpg" alt="Album 1 ">
+        <div class="info-container ">
+            <h2>Kuawnke Obulaka</h2>
+            <h2>Setuzhu Proto</h2>
+            <h2>45.21$</h2>
+
+            <div class="conta ">
+                <h2>Payment Method</h2>
+                <div class="custom-select ">
+                    <select name=" " id=" ">
+                    <option value=" ">CBE Birr</option>
+                    <option value=" ">Yene pay</option>
+                    <option value=" ">Amole</option>
+                    <option value=" ">Telebirr</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="rate ">
+                <i class="fa fa-star rated "></i>
+                <i class="fa fa-star rated "></i>
+                <i class="fa fa-star rated "></i>
+                <i class="fa fa-star unrated "></i>
+                <i class="fa fa-star unrated "></i>
+            </div>
+
+
+            <a style="margin-top: 11px;cursor:pointer " onclick="hide() " class="btn btn-green ">Buy Now<a/>
+        </div>
+
+    </div>
+</div>
+
+</html>
+
+<script>
+    document.getElementById("register ").onclick = function() {
+        document.getElementById("order-now ").style.display = 'block';
+    }
+
+    function show() {
+        document.getElementById("order-now ").style.display = 'block';
+    }
+
+    function hide() {
+        document.getElementById("order-now ").style.display = 'none';
+    }
+</script>
